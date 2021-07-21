@@ -16,8 +16,6 @@ class Person
         puts "#{@name} attacks #{other_person.name} with #{@attack_damage} damage"     
     end
 
-
-
     def take_damage(damage)
         @hitpoint -= damage
     end
@@ -29,10 +27,8 @@ class Person
         end
     end
 
-
     def check_status
         print "#{@name} has #{@hitpoint} hitpoint and #{@attack_damage} attack damage"
     end
-
     
 end

@@ -14,7 +14,7 @@ mongol_swordsman = MongolSwordsman.new("Mongol Swordsman", 100, 50)
 villains = [mongol_archer, mongol_spearman, mongol_swordsman]
 
 turnCount = 1
-until (jin.is_dead? || villains.empty?) do 
+until (heroes.empty? || villains.empty?) do 
   puts "==================== Turn #{turnCount} ===================="
   puts
   # Check status every character
@@ -60,6 +60,8 @@ until (jin.is_dead? || villains.empty?) do
     selectedAlly = heroes[allyIndex]
     jin.heal(selectedAlly)
     jinTurn= true
+  else
+    puts "You skip your turn"
   end
   #==============================
   
